@@ -1,0 +1,14 @@
+#
+#
+message("=== rplider_sdk ===")
+
+get_filename_component(RPLIDAR_ROOT "${CMAKE_CURRENT_LIST_DIR}/.." ABSOLUTE)
+
+set(RPLIDAR_INCLUDE_DIR "${RPLIDAR_ROOT}/include")
+set(RPLIDAR_LIBRARY_DIR "${RPLIDAR_ROOT}/lib")
+
+#set(RPLIDAR_CFLAGS -Wall -Wstrict-prototypes -std=gnu99 -fPIC -DNDEBUG -D_NDEBUG)
+set(RPLIDAR_CFLAGS -Wall -Wstrict-prototypes -fPIC -DNDEBUG -D_NDEBUG)
+set(RPLIDAR_LIBRARIES 
+    ${RPLIDAR_LIBRARY_DIR}/librplidar_sdk.a
+    stdc++ pthread)

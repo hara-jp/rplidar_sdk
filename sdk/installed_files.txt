@@ -1,0 +1,14 @@
+rplidar
+  +- cmake
+    +- rplidar_sdk-config.cmake
+  +- lib
+    +- librplidar_sdk.a
+  +- include
+    +- hal
+      +- types.h
+    +- rplidar_cmd.h
+    +- rplidar_protocol.h
+    +- rplidar.h
+    +- rptypes.h
+    +- rolidar_driver.h
+    
